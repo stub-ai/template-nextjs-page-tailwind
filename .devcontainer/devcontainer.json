@@ -12,7 +12,7 @@
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "gh codespace ports visibility 3000:public -c $CODESPACE_NAME",
+  "postCreateCommand": "gh codespace ports visibility 3000:public -c $CODESPACE_NAME && pnpm install && pnpm build",
 
   "postStartCommand": "pnpm start",
 
