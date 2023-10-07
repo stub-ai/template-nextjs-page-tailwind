@@ -14,7 +14,10 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "pnpm install && pnpm build",
 
-  "postStartCommand": "pnpm start"
+  "postStartCommand": "pnpm start",
+
+  // Specify the port that the application is listening on inside the container, and map it to a port on the host machine.
+  "appPort": 3000
 
   // Configure tool-specific properties.
   // "customizations": {},
